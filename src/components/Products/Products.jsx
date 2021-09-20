@@ -5,16 +5,8 @@ import Product from './Product/Product.jsx'
 
 import useStyles from './styles'
 
-const products = [
-    {id:1, name: 'Air Jordan 10', description:'Sneakers', price:'$250.00', image: 'https://i.imgur.com/1E257vD.jpg'},
-    {id:2, name:'MacBook', description:'Apple Computer MacBook', price:'$1250.00', image:'https://i.imgur.com/J8nlWW7.jpg'}, {
-        id: 3, name:'LogiTech X Pro', description:'Best Wired Headset for Ultra Surround sound', price:'$250.00', image:'https://i.imgur.com/PgHET2C.jpg'
-    }, {
-        id: 4, name:'RTX 3080', description:'The latest high powered graphics card', price:'$800.00', image:'https://i.imgur.com/jVht7jp.jpg'
-    }
-]
 
-const Products = () => {
+const Products = ({ products }) => {
     const classes = useStyles()
 
     return (
